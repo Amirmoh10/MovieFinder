@@ -1,0 +1,5 @@
+@import "tailwindcss/base";
+body,.app{background-color: #1A1F25}
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
