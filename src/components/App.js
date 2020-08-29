@@ -4,6 +4,8 @@ import MoviesList from "./MoviesList";
 import moviesContext from "../moviesContext";
 import axios from "axios";
 import CircularProgress from "@material-ui/core/CircularProgress";
+import PropTypes from "prop-types";
+
 
 const initialState = {
   typedInMovieTitle: "",
@@ -152,3 +154,7 @@ function App() {
 }
 
 export default App;
+
+MoviesList.propTypes = {
+  filteredMovies: PropTypes.arrayOf(PropTypes.object),
+};
